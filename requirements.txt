@@ -4,5 +4,6 @@ scikit-learn
 seaborn
 matplotlib
 flask
-nltk
--e .
+catboost
+xgboost
+#-e .

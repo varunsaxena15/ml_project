@@ -6,11 +6,11 @@ def get_requirements(file_path:str) -> List[str] :
     requ=[]
     with open(file_path) as file_obj :
         requ = file_obj.readlines()
-        requ = [req.replace("\n","") for req in requ]
+        requ = [req.strip() for req in requ]
         
         if hyphen in requ :
             requ.remove(hyphen)
-
+    print("Installing requirements:", requ) 
     return requ
 
 setup(
